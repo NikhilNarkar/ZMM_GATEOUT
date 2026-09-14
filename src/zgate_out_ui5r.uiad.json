@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Gate Out"
+  },
+  "ui5AppDetails": {
+    "appId": "zgateout"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_79AF1DECEA87DFEC2A662745E0E0F523BA55FEDB_TM",
+    "semanticObject": "zgate_out",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_79AF1DECEA87DFEC2A662745E0E0F523BA55FEDB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Gate Out",
+        "icon": "sap-icon://shipping-status"
+      }
+    }
+  ]
+}

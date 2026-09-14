@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for gate out'
+define service ZSD_GATE_OUT {
+  expose ZC_GATEOUT;
+}

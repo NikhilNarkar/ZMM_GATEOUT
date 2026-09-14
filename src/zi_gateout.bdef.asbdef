@@ -1,0 +1,25 @@
+managed implementation in class zbp_i_gateout unique;
+strict ( 2 );
+
+define behavior for ZI_GATEOUT alias ZI_GATEOUT_DOC
+
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  update;
+  // delete;
+  action ( features : instance ) ZPRINT result [1] $self;
+
+
+  field ( readonly ) Zgate;
+
+  mapping for zdb_gateout
+    {
+      Zgate     = zgate;
+      Plant     = plant;
+      Gateindt  = gateindate;
+      Gateoutdt = gateoutdate;
+    }
+}
